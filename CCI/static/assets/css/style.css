@@ -2192,14 +2192,14 @@ img {
 }
 @media (max-width: 767px) {
   .navbar-header {
-    padding: 5px 0;
+    padding: 2px 0;
   }
 
   #mu-menu .navbar-header .navbar-brand {
     padding-top: 0;
   }
   #mu-menu .navbar-header .navbar-brand img {
-    height:7vh;
+    height:6vh;
   }
   #mu-search-icon {
     display: none;
