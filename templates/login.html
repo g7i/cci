@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CCI - Creation Computer Institute</title>
+    </head>
+
+    <body>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+
+        <form action="{% url 'login' %}" class="login-form" method="POST">
+            <h1>Login</h1>
+            {% csrf_token %}
+            <div class="txtb">
+                <input id="txt" type="text" name="username">
+                <span data-placeholder="Username"></span>
+            </div>
+
+            <div class="txtb">
+                <input id="pass" type="password" name="password">
+                <span data-placeholder="Password"></span>
+            </div>
+
+            <input type="submit" value="Login" class="logbtn">
+            <div class="sicon">
+
+                <a href="{% url 'social:begin' 'google-oauth2' %}"><img id="img1" src="{% static 'google.png' %}"></a>
+                <a href="{% url 'social:begin' 'facebook' %}"><img id="img2" src="{% static 'facebook.png' %}"></a>
+            </div>
+
+            <div class="bottom-text">
+                Don't have account? <a href="{% url 'signup' %}">Sign Up</a>
+            </div>
+
+        </form>
+
+        <script type="text/javascript">
+
+            $(".txtb input").on("focus", function () {
+                $(this).addClass("focus");
+            });
+
+            $(".txtb input").on("blur", function () {
+                if ($(this).val() == "")
+                    $(this).removeClass("focus");
+            });
+
+            $(document).ready(function () {
+                if ($("#txt").val() == "")
+                    $("#txt").removeClass("focus");
+                else
+                    $("#txt").addClass("focus");
+
+                if ($("#pass").val() == "")
+                    $("#pass").removeClass("focus");
+                else
+                    $("#pass").addClass("focus");
+
+            });
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,74 @@
+{% load staticfiles %}
+
+<footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+        <div class="container">
+            <div class="mu-footer-top-area">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="mu-footer-widget">
+                            <h4>Links</h4>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'course' %}">Course</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="mu-footer-widget">
+                            <h4>Contact Us</h4>
+                            <address>
+                                <p>232, 33, 2nd Floor, Sardar Complex, Kadodara.</p>
+                                <p>Phone: +91 9624447080 </p>
+                                <p>Email: cci.kadodara@gmail.com</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="mu-footer-widget links">
+                            <h4>Follow Us</h4>
+                            <ul>
+                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+        <div class="container">
+            <div class="mu-footer-bottom-area">
+                <p>&copy; All Right Reserved. Creation Computer Institute</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- end footer bottom -->
+</footer>
+<!-- jQuery library -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'assets/js/bootstrap.js' %}"></script>
+<!-- Slick slider -->
+<script type="text/javascript" src="{% static 'assets/js/slick.js' %}"></script>
+<!-- Counter -->
+<script type="text/javascript" src="{% static 'assets/js/waypoints.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.counterup.js' %}"></script>
+<!-- Mixit slider -->
+<script type="text/javascript" src="{% static 'assets/js/jquery.mixitup.js' %}"></script>
+<!-- Add fancyBox -->
+<script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.pack.js' %}"></script>
+
+
+<!-- Custom js -->
+<script src="{% static 'assets/js/custom.js' %}"></script>
