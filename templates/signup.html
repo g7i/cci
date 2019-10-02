@@ -44,24 +44,24 @@
                         <form method="POST" action="{% url 'signup' %}">
                             {% csrf_token %}
                             <div class="input-group">
-                                <input class="input--style-1" type="text" placeholder="USERNAME" id="username" required>
+                                <input class="input--style-1" type="text" placeholder="USERNAME" name="username" required>
                             </div>
                             <div class="row row-space">
                                 <div class="col-2">
                                     <div class="input-group">
                                         <input class="input--style-1" type="password" placeholder="PASSWORD"
-                                            id="password1" required>
+                                            name="password1" required>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="input-group">
                                         <input class="input--style-1" type="password" placeholder="CONFIRM PASSWORD"
-                                            id="password2" required>
+                                            name="password2" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <input class="input--style-1" type="email" placeholder="EMAIL" id="email" required>
+                                <input class="input--style-1" type="email" placeholder="EMAIL" name="email" required>
                             </div>
 
                             <div class="p-t-20">
