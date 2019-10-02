@@ -31,6 +31,12 @@
 */
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -2190,7 +2196,7 @@ img {
   }
 
   #mu-menu .navbar-header .navbar-brand {
-    padding-top: 10px;
+    padding-top: 0;
   }
 
   #mu-search-icon {
@@ -2522,4 +2528,12 @@ img {
 .wh{
   color: #2ecc71;
   border-color:#2ecc71;
+}
+
+.mu-slider-single{
+  overflow-y: hidden;
+}
+.imgcourse{
+  height:750px;
+  width:500px;
 }

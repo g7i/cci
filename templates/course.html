@@ -179,14 +179,15 @@
                       <div class="col-md-6 col-sm-6">
                         <div class="mu-latest-course-single">
                           <figure class="mu-latest-course-img">
-                            <a href="{% url 'detail' course.id %}"><img src="{{course.image.url}}" alt="img"></a>
+                            <a href="{% url 'detail' course.id %}"><img src="{{course.image.url}}" alt="img"
+                                class="imgcourse"></a>
                             <figcaption class="mu-latest-course-imgcaption">
                               <a href="{% url 'category' course.category %}">{{course.category}}</a>
                               <span><i class="fa fa-clock-o"></i>{{course.duration}} Months</span>
                             </figcaption>
                           </figure>
                           <div class="mu-latest-course-single-content">
-                            <h4><a href="{% url 'detail' course.id %}">{{course.description}}</p>
+                            <h4><a href="{% url 'detail' course.id %}">{{course.summary}}</p>
                                 <div class="mu-latest-course-single-contbottom">
                                   <a class="mu-course-details" href="{% url 'detail' course.id %}">Details</a>
                                   <span class="mu-course-price" href="">₹{{course.price}}</span>
