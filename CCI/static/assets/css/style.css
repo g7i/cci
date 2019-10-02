@@ -35,7 +35,6 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 body {
   background-color: #ffffff;
@@ -2203,6 +2202,9 @@ img {
   }
   #mu-search-icon {
     display: none;
+  }
+  #mu-about-us .mu-about-us-area .mu-about-us-right a img {
+    width: 90vw;
   }
 
   .navbar-toggle {
