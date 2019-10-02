@@ -503,7 +503,7 @@ img {
   position: relative;
 
 }
-#mu-about-us .mu-about-us-area .mu-about-us-right a img {
+#mu-about-us .mu-about-us-area .mu-about-us-right img {
   width: 100%;
 }
 
@@ -2203,7 +2203,7 @@ img {
   #mu-search-icon {
     display: none;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-right a img {
+  #mu-about-us .mu-about-us-area .mu-about-us-right img {
     width: 90vw;
   }
 
