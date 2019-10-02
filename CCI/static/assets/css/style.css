@@ -2192,13 +2192,15 @@ img {
 }
 @media (max-width: 767px) {
   .navbar-header {
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   #mu-menu .navbar-header .navbar-brand {
     padding-top: 0;
   }
-
+  #mu-menu .navbar-header .navbar-brand img {
+    height:7vh;
+  }
   #mu-search-icon {
     display: none;
   }
@@ -2534,6 +2536,6 @@ img {
   overflow-y: hidden;
 }
 .imgcourse{
-  height:750px;
+  height:30vh;
   width:500px;
 }
