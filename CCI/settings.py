@@ -25,7 +25,7 @@ SECRET_KEY = 'zu1&bg-r(j-dfw@$+vn7htfzg6s*of+4*bvi+uddk6=cj+83h9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -49,6 +49,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -158,3 +159,9 @@ SOCIAL_AUTH__SECRET = 'SECRET'
 
 SOCIAL_AUTH_FACEBOOK_KEY = '367121290658148'
 SOCIAL_AUTH_FACEBOOK_SECRET = 'f7327316597b7ce836d361aef3e874ba'
+
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
