@@ -2205,7 +2205,7 @@ img {
     display: none;
   }
   #mu-about-us .mu-about-us-area .mu-about-us-right img {
-    width: 90vw;
+    width: 85vw;
   }
 
   .navbar-toggle {
@@ -2465,7 +2465,9 @@ img {
   #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li {
     margin-bottom: 10px;
   }
-
+  #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right{
+    width: 85vw;
+  }
   #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right iframe {
     height: 350px;
   }
