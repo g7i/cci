@@ -71,7 +71,8 @@
                   <div class="mu-header-top-right">
                     <nav>
                       <ul class="mu-top-social-nav">
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="https://www.facebook.com/ccieducation/"><span class="fa fa-facebook"></span></a>
+                        </li>
                         <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                         <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
@@ -116,13 +117,12 @@
 
               <li class=" active"><a href="{% url 'about' %}">About Us</a></li>
               <li><a href="{% url 'contact' %}">Contact Us</a></li>
-              {% if user.is_autheticated %}
-            <li><a href="{% url 'logout' %}">Logout {{user.username}}</a></li>
-            {% else %}
-            <li><a href="{% url 'login' %}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            {% endif %}
-              <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+              {% if user.is_authenticated %}
+              <li><a href="{% url 'logout' %}">Logout {{user.username}}</a></li>
+              {% else %}
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="{% url 'signup' %}">Sign Up</a></li>
+              {% endif %}
             </ul>
           </div>
           <!--/.nav-collapse -->
@@ -179,32 +179,33 @@
                             <figcaption class="mu-blog-caption">
                               <h2><a href="{% url 'index' %}">CCI - Creation Computer Institute</a></h2>
                             </figcaption><br><br><br><br>
-                            <a href="#"><img alt="img" src="{% static 'assets/img/course11.jpg' %}"></a><br>
+                            <a href="#"><img alt="img" src="{% static 'assets/img/course11.jpg' %}"
+                                data-aos="zoom-in-up"></a><br>
 
                           </figure>
 
                           <div class="mu-blog-description">
 
-                            <blockquote>
+                            <blockquote data-aos="fade-right">
                               <p>Founded in 2002 with the mission of providing best quality Computer education to all
                                 classes of people in a very reasonable fee structure, Creation Computer Institute is
                                 committed to create successful careers to enable growth of society.</p>
                             </blockquote>
 
                             <h3>Core Values</h3>
-                            <blockquote>
+                            <blockquote data-aos="fade-right">
                               <p>Integrity, Dedication, Innovation, Growth, Social Development</p>
                             </blockquote>
 
                             <h3>Our Mission</h3>
-                            <blockquote>
+                            <blockquote data-aos="fade-right">
                               <p>To create skilled and well informed indiviauals who can implement their learning
                                 effectively for betterment of society. To deliver computer education to every segment of
                                 society with effective coaching and lifelong support.</p>
                             </blockquote>
 
                             <h3>Our Vision</h3>
-                            <blockquote>
+                            <blockquote data-aos="fade-right">
                               <p>To be one of the most trusted and recognized center for learning across India.</p>
                             </blockquote>
 

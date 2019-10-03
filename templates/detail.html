@@ -72,7 +72,8 @@
                   <div class="mu-header-top-right">
                     <nav>
                       <ul class="mu-top-social-nav">
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="https://www.facebook.com/ccieducation/"><span class="fa fa-facebook"></span></a>
+                        </li>
                         <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                         <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
@@ -116,13 +117,12 @@
               </li>
               <li><a href="{% url 'about' %}">About Us</a></li>
               <li><a href="{% url 'contact' %}">Contact Us</a></li>
-              {% if user.is_autheticated %}
+              {% if user.is_authenticated %}
               <li><a href="{% url 'logout' %}">Logout {{user.username}}</a></li>
               {% else %}
               <li><a href="{% url 'login' %}">Login</a></li>
               <li><a href="{% url 'signup' %}">Sign Up</a></li>
               {% endif %}
-              <li><a href="" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->
@@ -184,7 +184,7 @@
                           </figure>
                           <div class="mu-latest-course-single-content">
                             <h2><a href="">{{course.title}}</a></h2>
-                            <a href="https://wa.me/918949003503/?text=hi%20i%20want%20to%20buy%20course"
+                            <a href="https://wa.me/918949003503/?text=I%20am%20interested%20in%20*{{course.title}}*%20course.%20My%20Username%20is%20*{{user.username}}*%20and%20email%20is%20*{{user.email}}*."
                               class="mu-read-more-btn wh">Apply For This
                               Course</a><br><br>
                             <h4>Course Information</h4>

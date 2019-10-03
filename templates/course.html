@@ -71,7 +71,8 @@
                   <div class="mu-header-top-right">
                     <nav>
                       <ul class="mu-top-social-nav">
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="https://www.facebook.com/ccieducation/"><span class="fa fa-facebook"></span></a>
+                        </li>
                         <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                         <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                         <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
@@ -116,13 +117,12 @@
               <li><a href="{% url 'about' %}">About Us</a></li>
 
               <li><a href="{% url 'contact' %}">Contact Us</a></li>
-              {% if user.is_autheticated %}
+              {% if user.is_authenticated %}
               <li><a href="{% url 'logout' %}">Logout {{user.username}}</a></li>
               {% else %}
               <li><a href="{% url 'login' %}">Login</a></li>
               <li><a href="{% url 'signup' %}">Sign Up</a></li>
               {% endif %}
-              <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
             </ul>
           </div>
           <!--/.nav-collapse -->
@@ -177,7 +177,7 @@
                       {% for course in courses %}
 
                       <div class="col-md-6 col-sm-6">
-                        <div class="mu-latest-course-single">
+                        <div class="mu-latest-course-single" data-aos="flip-right">
                           <figure class="mu-latest-course-img">
                             <a href="{% url 'detail' course.id %}"><img src="{{course.image.url}}" alt="img"
                                 class="imgcourse"></a>
@@ -209,7 +209,7 @@
                   <!-- start sidebar -->
                   <aside class="mu-sidebar">
                     <!-- start single sidebar -->
-                    <div class="mu-single-sidebar">
+                    <div class="mu-single-sidebar" data-aos="fade-left">
                       <h3>Categories</h3>
                       <ul class="mu-sidebar-catg">
                         <li><a href="{% url 'course' %}">All Courses</a></li>

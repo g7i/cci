@@ -123,7 +123,7 @@ img {
  HEADER SECTION
 ====================*/
 #mu-header {
-  background-color: #f8f8f8;
+  background-color: #bbad4a;
   display: inline;
   float: left;
   width: 100%;
@@ -431,7 +431,7 @@ img {
   width: 100%;
 }
 #mu-service .mu-service-area .mu-service-single {
-  background-color: #01bafd;
+  background-color: #664019;
   color: #fff;
   display: inline;
   float: left;
@@ -440,10 +440,11 @@ img {
   width: 33.33%;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(2) {
-  background-color: #2ecc71;
+  background-color: #bbad4a;
+  color:black;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(3) {
-  background-color: #45a0de;
+  background-color: #664019;
 }
 #mu-service .mu-service-area .mu-service-single span {
   font-size: 30px;
@@ -1122,7 +1123,7 @@ img {
  COURSES PAGE
 ====================*/
 #mu-page-breadcrumb {
-  background-color: #333;
+  background-color: #bbad4a;
   display: inline;
   float: left;
   padding: 30px 0;
@@ -1135,7 +1136,7 @@ img {
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area h2 {
   text-align: center;
-  color: #fff;
+  color: rgb(17, 17, 17);
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb {
   background-color: transparent;
@@ -1145,10 +1146,10 @@ img {
   text-align: center;
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb li {
-  color: #fff;
+  color: rgb(17, 17, 17);
 }
 #mu-page-breadcrumb .mu-page-breadcrumb-area .breadcrumb li a {
-  color: #fff;
+  color: rgb(17, 17, 17);
 }
 
 #mu-course-content {
@@ -1932,7 +1933,7 @@ img {
   width: 100%;
 }
 #mu-footer .mu-footer-top {
-  background-color: #333;
+  background-color: #bbad4a;
   display: inline;
   float: left;
   padding: 50px 0;
@@ -1949,14 +1950,14 @@ img {
   width: 100%;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget h4 {
-  color: #fff;
+  color: #000000bd;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a {
-  color: #f9f9f9;
+  color: #000000bd;
   display: inline-block;
   font-size: 14px;
   font-weight: normal;
@@ -1980,7 +1981,7 @@ img {
   margin-left: 5px;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget p {
-  color: #f9f9f9;
+  color: #000000bd;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form {
   display: inline;
@@ -2004,7 +2005,7 @@ img {
   transition: all 0.5s;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form .mu-subscribe-btn {
-  color: #fff;
+  color: rgb(0, 0, 0);
   border: medium none;
   border-radius: 4px;
   font-size: 14px;
@@ -2016,7 +2017,7 @@ img {
   letter-spacing: 0.5px;
 }
 #mu-footer .mu-footer-bottom {
-  background-color: #222;
+  background-color: #664019;
   display: inline;
   float: left;
   padding: 25px 0;
@@ -2530,8 +2531,8 @@ img {
 }
 
 .wh{
-  color: #2ecc71;
-  border-color:#2ecc71;
+  color: #a89a32;
+  border-color:#968a33;
 }
 
 .mu-slider-single{

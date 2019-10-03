@@ -35,11 +35,10 @@ def login(request):
             #     return redirect('home')
             return redirect(request.POST.get('next','index'))
         else:
-            return render(request,'login.html',{'error':'Username or Password is incorrect..'})
+            return render(request,'login.html',{'error':'Invalid Credentials...'})
     else:
         return render(request, 'login.html')
 
 def logout(request):
-    if request.method == 'POST':
-        auth.logout(request)
-        return redirect('index')
+    auth.logout(request)
+    return redirect('index')

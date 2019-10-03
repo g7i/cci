@@ -31,7 +31,8 @@
                         <div class="mu-footer-widget links">
                             <h4>Follow Us</h4>
                             <ul>
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="https://www.facebook.com/ccieducation/"><span
+                                            class="fa fa-facebook"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                                 <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                                 <li><a href="#"><span class="fa fa-youtube"></span></a></li>
@@ -55,6 +56,7 @@
     </div>
     <!-- end footer bottom -->
 </footer>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- jQuery library -->
 <script src="{% static 'assets/js/jquery.min.js' %}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -69,6 +71,15 @@
 <!-- Add fancyBox -->
 <script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.pack.js' %}"></script>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <!-- Custom js -->
 <script src="{% static 'assets/js/custom.js' %}"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>

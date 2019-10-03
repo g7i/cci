@@ -8,5 +8,4 @@ urlpatterns = [
     path('category/<str:name>', views.category, name="category"),
     path('contact', views.contact, name="contact"),
     path('about', views.about, name="about"),
-    path('mail', views.mail, name="mail"),
 ]

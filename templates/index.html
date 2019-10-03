@@ -69,7 +69,7 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="https://www.facebook.com/ccieducation/"><span class="fa fa-facebook"></span></a></li>
                       <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                       <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
@@ -113,7 +113,7 @@
                    
             <li><a href="{% url 'contact' %}">Contact Us</a></li>
 
-            {% if user.is_autheticated %}
+            {% if user.is_authenticated %}
             <li><a href="{% url 'logout' %}">Logout {{user.username}}</a></li>
             {% else %}
             <li><a href="{% url 'login' %}">Login</a></li>
@@ -121,7 +121,6 @@
             {% endif %}
             
 
-            <li><a href="" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
           </ul>                     
         </div><!--/.nav-collapse -->        
       </div>     
@@ -203,21 +202,21 @@
         <div class="col-lg-12 col-md-12">
           <div class="mu-service-area">
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" data-aos="fade-down">
               <span class="fa fa-book"></span>
               <h3>Best Classrooms</h3>
-              <p>Creation Computer Institute provides you the best classrooms and well maintained environment for better learning and focus on the courses.</p>
+              <p>CCI provides you the best classrooms and well maintained environment for better learning and focus on the courses.</p>
             </div>
             <!-- Start single service -->
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" data-aos="fade-up">
               <span class="fa fa-users"></span>
               <h3>Expert Teachers</h3>
               <p>Creation Computer Institute also provides you with the best faculties having a long experience and more friendly in nature.</p>
             </div>
             <!-- Start single service -->
             <!-- Start single service -->
-            <div class="mu-service-single">
+            <div class="mu-service-single" data-aos="fade-down">
               <span class="fa fa-table"></span>
               <h3>Reasonable Fees</h3>
               <p>Creation Computer Institute tries to provide you the best content at minimal price that are perfect value for your money.</p>
@@ -238,7 +237,7 @@
           <div class="mu-about-us-area">           
             <div class="row" style="display: flex;flex-wrap:wrap;align-content: center;">
               <div class="col-lg-6 col-md-6">
-                <div class="mu-about-us-left">
+                <div class="mu-about-us-left" data-aos="fade-right">
                   <!-- Start Title -->
                   <div class="mu-title">
                     <h2>About Us</h2>              
@@ -261,7 +260,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
-                <div class="mu-about-us-right">                            
+                <div class="mu-about-us-right" data-aos="flip-right">                            
                 
                   <img src="{% static 'assets/img/course11.jpg' %}" alt="img" class="img-fluid">
                 </div>
@@ -276,7 +275,7 @@
 
   <!-- Start about us counter -->
   <section id="mu-abtus-counter">
-    <div class="container">
+    <div class="container" data-aos="zoom-in-down">
       <h2>Certificates You Can Get</h2>
       <ul>
         <li>ISO certified certificate</li>
@@ -309,7 +308,7 @@
             <div class="mu-features-content">
               <div class="row">
                 <div class="col-lg-4 col-md-4  col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-book"></span>
                     <h4>Basic Course</h4>
                     <p>
@@ -328,7 +327,7 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-users"></span>
                     <h4>Accounting Course</h4>
                     <p>
@@ -345,7 +344,7 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-microphone"></span>
                     <h4>Spoken English</h4>
                     <p>
@@ -363,7 +362,7 @@
               <div class="row">
                 
                 <div class="col-lg-4 col-md-4 col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-laptop"></span>
                     <h4>Designing Course</h4>
                     <p>
@@ -380,7 +379,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-certificate"></span>
                     <h4>Digital Marketing</h4>
                     <p>
@@ -395,7 +394,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-4 col-sm-6 course">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature" data-aos="zoom-out">
                     <span class="fa fa-film"></span>
                     <h4>IT Professional</h4>
                     <p>
@@ -438,7 +437,7 @@
             {% for course in courses %}
               
               <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="mu-latest-course-single">
+                <div class="mu-latest-course-single" data-aos="flip-right">
                   <figure class="mu-latest-course-img">
                     <a href="{% url 'detail' course.id %}"><img src="{{course.image.url}}" alt="img" class="imgcourse"></a>
                     <figcaption class="mu-latest-course-imgcaption">
@@ -486,7 +485,7 @@
                 <div class="col-lg-3 col-md-3  col-sm-6">
                   <div class="mu-our-teacher-single">
                                         
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Data Operator</h4>
                      
                     </div>
@@ -495,7 +494,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                                      
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Accountant</h4>
                       
                     </div>
@@ -504,7 +503,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                                         
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Graphic Designer</h4>
                       
                     </div>
@@ -513,7 +512,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Textile Designer</h4>
                       
                     </div>
@@ -522,7 +521,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Digital Designer</h4>
                      
                     </div>
@@ -531,7 +530,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Photo Editor</h4>
                       
                     </div>
@@ -540,7 +539,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Hardware Engineer</h4>
                      
                     </div>
@@ -549,7 +548,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Software Engineer</h4>
                       
                     </div>
@@ -558,7 +557,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Web Developer</h4>
                     
                     </div>
@@ -567,7 +566,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Digital Marketer</h4>
                      
                     </div>
@@ -576,7 +575,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Search Expert</h4>
                       
                     </div>
@@ -585,7 +584,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Creative Technologist</h4>
                       
                     </div>
@@ -594,7 +593,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>SEO Expert</h4>
                      
                     </div>
@@ -603,7 +602,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                              
-                    <div class="mu-ourteacher-single-content">
+                    <div class="mu-ourteacher-single-content" data-aos="fade-right">
                       <h4>Computer Trainer</h4>
                       
                     </div>
