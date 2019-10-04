@@ -494,8 +494,7 @@ img {
   width: 100%;
   display: block;
   width: 100%;
-  background-color: #ccc;
-  padding-right: 5vw;
+  background-color: rgb(255, 255, 255);
 
 }
 #mu-about-us .mu-about-us-area .mu-about-us-right a {
